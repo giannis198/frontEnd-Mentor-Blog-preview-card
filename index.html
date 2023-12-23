@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Figtree", sans-serif;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .container {
+        max-width: 1440px;
+        height: 100dvh;
+        background-color: hsl(47, 88%, 63%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card {
+        width: 25%;
+        background-color: hsl(0, 0%, 100%);
+        display: grid;
+        padding: 1.3em;
+        gap: 1em;
+        border-radius: 1em;
+        border: 1px solid black;
+        box-shadow: 7px 7px 1px black;
+      }
+
+      .card__image img {
+        border-radius: 1em;
+      }
+
+      .card__badge {
+        color: hsl(0, 0%, 7%);
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        background-color: hsl(47, 88%, 63%);
+        font-weight: 800;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+      }
+
+      .card__title {
+        color: hsl(0, 0%, 7%);
+        font-weight: 800;
+      }
+
+      .profile {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+      }
+
+      .profile__img {
+        height: 2.2em;
+        width: 2.2em;
+      }
+
+      .profile__name {
+        font-size: 0.9em;
+        font-weight: 800;
+      }
+
+      .card__published-date {
+        color: hsl(0, 0%, 7%);
+        font-weight: regular;
+      }
+
+      p {
+        color: hsl(0, 0%, 50%);
+        font-weight: 600;
+        font-size: 1em;
+      }
+
+      @media (max-width: 375px) {
+        .card {
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="card">
+          <div class="card__image">
+            <img
+              src="assets/images/illustration-article.svg"
+              alt="illustation"
+            />
+          </div>
+          <h3 class="card__badge">Learning</h3>
+          <p class="card__published-date">Published 21 Dec 2023</p>
+          <h2 class="card__title">HTML & CSS foundations</h2>
+          <p class="card__description">
+            These languages are the backbone of every website, defining
+            structure, content and presentation.
+          </p>
+          <div class="profile">
+            <div class="profile__img">
+              <img src="assets/images/image-avatar.webp" alt="profile" />
+            </div>
+            <h3 class="profile__name">Greg Hooper</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
